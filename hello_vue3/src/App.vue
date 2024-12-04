@@ -2,13 +2,16 @@
 
 <div class="sss">
     <h1>hello</h1>
+    <h3>{{ student }}</h3>
 </div>
 </template>
 
 <script>
 export default{
     data(){
-        student:"Steven"
+        return{
+            student:"Steven"
+        }
     }
 }
 
