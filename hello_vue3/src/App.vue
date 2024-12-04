@@ -1,27 +1,24 @@
 <template>
-
-<div class="sss">
-    <h1>hello</h1>
-    <h3>{{ student }}</h3>
-</div>
-</template>
-
-<script>
-export default{
-    data(){
-        return{
-            student:"Steven"
-        }
+    <div class="app">
+      <h1>你好啊！</h1>
+      <Person/>
+    </div>
+  </template>
+  
+  <script>
+    import Person from './components/Person.vue'
+  
+    export default {
+      name:'App', //组件名
+      components:{Person} //注册组件
     }
-}
-
-</script>
-
-<style>
-    .sss{
-    background-color: skyblue;
-    box-shadow: 0 0 10px;
-    border-radius: 10px;
-    padding: 20px;
+  </script>
+  
+  <style>
+    .app {
+      background-color: orange;
+      box-shadow: 0 0 10px;
+      border-radius: 10px;
+      padding: 20px;
     }
-</style>
+  </style>
